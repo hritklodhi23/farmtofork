@@ -1,0 +1,38 @@
+{
+  "folders": [
+    {
+      "name": "frontend",
+      "path": "frontend"
+    },
+    {
+      "name": "backend",
+      "path": "backend"
+    },
+    {
+      "name": "root",
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "PKief.material-icon-theme",
+      "mongodb.mongodb-vscode",
+      "humao.rest-client",
+      "bradlc.vscode-tailwindcss"
+    ]
+  },
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "files.eol": "\n",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
+  }
+}
