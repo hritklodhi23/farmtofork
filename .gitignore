@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Build output
+dist/
+backend/dist/
+frontend/dist/
+
+# Environment variable files – never commit secrets!
+.env
+backend/.env
+frontend/.env
