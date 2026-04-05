@@ -1,0 +1,172 @@
+/* FarmToFork App styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f5f5f0;
+  color: #222;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+.app-header {
+  text-align: center;
+  padding: 40px 0 24px;
+  border-bottom: 2px solid #d4e6b5;
+}
+
+.app-header h1 {
+  font-size: 2.2rem;
+  color: #2e7d32;
+}
+
+.app-header p {
+  color: #555;
+  margin-top: 6px;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+/* Add product form */
+.add-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-form h2 {
+  color: #2e7d32;
+  margin-bottom: 4px;
+}
+
+.add-form input,
+.add-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.add-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-form button {
+  align-self: flex-start;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-form button:hover:not(:disabled) {
+  background: #1b5e20;
+}
+
+.add-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Products section */
+.products-section h2 {
+  color: #2e7d32;
+  margin-bottom: 16px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.15s;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+}
+
+.product-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-category {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.product-id {
+  font-size: 11px;
+  color: #bbb;
+}
+
+/* States */
+.status {
+  color: #666;
+  padding: 8px 0;
+}
+
+.error {
+  color: #c62828;
+  background: #ffebee;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
