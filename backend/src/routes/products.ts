@@ -1,7 +1,19 @@
 import { Router, Request, Response } from 'express';
+import rateLimit from 'express-rate-limit';
 import Product from '../models/Product';
 
 const router = Router();
+
+// Rate limiter: max 100 requests per 15 minutes per IP
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many requests, please try again later.' },
+});
+
+router.use(apiLimiter);
 
 // In-memory fallback storage (used when MongoDB is not connected)
 let inMemoryProducts: Array<{
