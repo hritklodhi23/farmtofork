@@ -1,0 +1,132 @@
+/* ============================================================
+   AgriConnect — global styles
+   ============================================================ */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #f9fafb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2d6a4f;
+}
+
+.tagline {
+  color: #52796f;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d8e6de;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  font-size: 1.15rem;
+  color: #1b4332;
+  margin-bottom: 0.5rem;
+}
+
+.card p,
+.card li {
+  color: #374151;
+}
+
+.card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-left: 0.25rem;
+}
+
+.card.status p {
+  font-size: 0.95rem;
+  background: #ecfdf5;
+  border: 1px solid #6ee7b7;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  color: #065f46;
+}
+
+footer {
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+footer code {
+  background: #f3f4f6;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e2e8f0;
+    background-color: #0f172a;
+  }
+  .card {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  .card h2 {
+    color: #86efac;
+  }
+  .card p,
+  .card li {
+    color: #cbd5e1;
+  }
+  .card.status p {
+    background: #064e3b;
+    border-color: #059669;
+    color: #6ee7b7;
+  }
+  header h1 {
+    color: #4ade80;
+  }
+  .tagline {
+    color: #86efac;
+  }
+  footer {
+    color: #94a3b8;
+  }
+  footer code {
+    background: #1e293b;
+  }
+}

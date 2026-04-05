@@ -1,0 +1,28 @@
+{
+  "name": "farmtofork",
+  "version": "1.0.0",
+  "description": "My Hackathon project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --names BACKEND,FRONTEND --prefix-colors green,cyan \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix backend && npm run build --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hritklodhi23/farmtofork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hritklodhi23/farmtofork/issues"
+  },
+  "homepage": "https://github.com/hritklodhi23/farmtofork#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
